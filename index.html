@@ -1,177 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forex with Raj - VIP Signal Group</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom right, #004d7a, #008793, #00bf72);
-            color: #fff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forex with Raj - VIP Signal Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #004d7a, #008793, #00bf72);
+      color: #fff;
+    }
 
-        header {
-            background-color: #002f4b;
-            padding: 20px;
-            text-align: center;
-        }
+    header {
+      background-color: #002f4b;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            color: #ffffff;
-        }
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+    }
 
-        .section {
-            padding: 50px 20px;
-            text-align: center;
-        }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
 
-        .section h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-        .section p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
 
-        .button {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .section p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
 
-        .testimonials {
-            background-color: #00334e;
-            padding: 50px 20px;
-            text-align: center;
-        }
+    .button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 15px 35px;
+      border: none;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      animation: blink 1s infinite;
+      box-shadow: 0 4px 12px rgba(255, 204, 0, 0.5);
+      transition: transform 0.2s ease;
+    }
 
-        .testimonials h2 {
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
+    .button:hover {
+      transform: scale(1.05);
+    }
 
-        .testimonial {
-            max-width: 600px;
-            margin: 0 auto 30px;
-            background-color: #005370;
-            padding: 20px;
-            border-radius: 10px;
-        }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
 
-        .testimonial img {
-            width: 100%;
-            border-radius: 10px;
-        }
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
 
-        footer {
-            background-color: #002f4b;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
+    .floating-cta a {
+      background-color: #ffcc00;
+      padding: 15px 20px;
+      color: #000;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      animation: blink 1s infinite;
+    }
 
-        footer h3 {
-            margin-bottom: 20px;
-        }
+    .testimonials {
+      background-color: #00334e;
+      padding: 60px 20px;
+    }
 
-        .footer-social a {
-            margin: 0 10px;
-            color: #ffcc00;
-            text-decoration: none;
-            font-size: 20px;
-        }
+    .testimonial {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      background-color: #005370;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
 
-        .admin-contact {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-    </style>
-       <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '547660731519996');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=547660731519996&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    .testimonial img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    ul {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #002f4b;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .footer-social a {
+      margin: 0 15px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    .footer-social a:hover {
+      color: #fff;
+    }
+
+    .admin-contact {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .lottie {
+      margin: 40px auto;
+      width: 300px;
+      height: 300px;
+    }
+
+    .highlight-link {
+      color: #ff66cc;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq) return; n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq) f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '547660731519996');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=547660731519996&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
-
 <body>
-    <header>
-        <h1>Welcome to Forex with Raj</h1>
-        <p>Your journey to profitable trading starts here.</p>
-    </header>
+  <header>
+    <h1>Welcome to Forex with Raj</h1>
+    <p>Your journey to profitable trading starts here.</p>
+  </header>
 
-    <section class="section">
-        <h2>Join Our VIP Signal Group</h2>
-        <p>Experience accurate forex signals, expert mentorship, and financial freedom with our trusted VIP Signal Group.
-            Our clients have transformed their trading results with our proven strategies and real-time guidance.</p>
-<a class="button" href="https://t.me/+Su1L-P_CH5cyMWE9" onclick="fbq('track', 'Subscribe');" target="_blank">Join Telegram Channel</a>
-    </section>
+  <section class="section">
+    <h2>🔥 VIP Signal Group Benefits</h2>
+    <p>Join our trusted community for daily signals, personalised guidance, and consistent results in the Forex market.</p>
+    <a class="button" href="https://t.me/+Su1L-P_CH5cyMWE9" target="_blank" onclick="fbq('track', 'Subscribe');">Join Telegram Channel</a>
+  </section>
 
-    <section class="testimonials">
-        <h2>Success Stories</h2>
-        <div class="testimonial">
-            <img src="forex proof1.jpg" alt="Testimonial 1">
-        </div>
-        <div class="testimonial">
-            <img src="forex proof2.jpg" alt="Testimonial 2">
-        </div>
-        <div class="testimonial">
-            <img src="forex proof3.jpg" alt="Testimonial 3">
-        </div>
-    </section>
+   <div class="lottie">
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ygiuluqn.json" background="transparent" speed="1" loop autoplay></lottie-player>
+  </div>
 
-    <section class="section">
-        <h2>Why Choose Us?</h2>
-        <p>With years of market experience and a solid reputation, Forex with Raj is dedicated to delivering results. Our VIP group offers:</p>
-        <ul style="text-align:left; max-width:600px; margin:0 auto;">
-            <li>✔ High-accuracy trading signals</li>
-            <li>✔ Personalized mentoring and support</li>
-            <li>✔ Real-time market updates</li>
-            <li>✔ Beginner to advanced level strategies</li>
-            <li>✔ Transparent and ethical service following Meta guidelines</li>
-        </ul>
-    </section>
+  <section class="testimonials">
+    <h2>📈 Success Stories</h2>
+    <div class="testimonial">
+      <img src="forex proof1.jpg" alt="Profit Screenshot from Member 1">
+    </div>
+    <div class="testimonial">
+      <img src="forex proof2.jpg" alt="Profit Screenshot from Member 2">
+    </div>
+    <div class="testimonial">
+      <img src="forex proof3.jpg" alt="Profit Screenshot from Member 3">
+    </div>
+  </section>
 
-    <footer>
-        <h3>Connect with Forex with Raj</h3>
-        <div class="footer-social">
-            <a href="https://t.me/+Su1L-P_CH5cyMWE9" onclick="fbq('track', 'Subscribe');" target="_blank">Telegram</a>
-            <a href="https://www.instagram.com/tradewithraj77?igsh=bm1rOTByNDQ1bWRu">Instagram</a>
-            <a href="https://www.facebook.com/share/16AZUKvZha/">Facebook</a>
-        </div>
-        <div class="admin-contact">
-            <p>Admin: Raj</p>
-        </div>
-        <p>Disclaimer: Trading involves risk. Past results do not guarantee future performance. This is for educational purposes only.
-            © 2025 Forex with Raj. All rights reserved.</p>
-        <p>For ad service contact <a href="https://t.me/+EQtmWknvjwZkYTM9">Smilyadsmarket</a></p>
-    </footer>
+  <section class="section">
+    <h2>Why Choose Us?</h2>
+    <p>With years of market experience, we provide:</p>
+    <ul>
+      <li>✔ High-accuracy trading signals</li>
+      <li>✔ Personalized mentoring and support</li>
+      <li>✔ Real-time market updates</li>
+      <li>✔ Beginner to advanced level strategies</li>
+      <li>✔ Transparent and ethical service following Meta guidelines</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h3>Connect with Forex with Raj</h3>
+    <div class="footer-social">
+      <a href="https://t.me/+Su1L-P_CH5cyMWE9" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/tradewithraj77?igsh=bm1rOTByNDQ1bWRu">Instagram</a>
+      <a href="https://www.facebook.com/share/16AZUKvZha/">Facebook</a>
+    </div>
+    <p class="admin-contact">Admin: Raj</p>
+    <p>Disclaimer: Trading involves risk. Past results do not guarantee future performance. This is for educational purposes only.<br>
+    © 2025 Forex with Raj. All rights reserved.</p>
+    <p>For ad service contact <a class="highlight-link" href="https://t.me/+EQtmWknvjwZkYTM9">Smilyadsmarket</a></p>
+  </footer>
+
+  <div class="floating-cta">
+    <a href="https://t.me/+Su1L-P_CH5cyMWE9" target="_blank">📲 Join Now</a>
+  </div>
 </body>
-
 </html>
